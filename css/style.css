@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#F2F2F2;  
+}
+header{
+    background-color: #0D0D0D;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:80px;
+}
+header h1{
+    color:white;
+    font-family:'Montserrat';
+    font-size:2.2em;
+
+}
+.text{
+    margin-top:25px;
+}
+.text h2{ 
+   text-align: center;
+}
+.formulario-principal{
+    width:40%;
+    margin:auto;
+    display:block;
+    border:solid 2px #BFBFBF;
+    border-radius:0.9em;
+    padding:1.2em;
+}
+
+.mb-3{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control{
+    width:75%;
+}
+.botoes{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+.btnForm{
+    width:150px;
+}
+.principal{
+    display:flex;
+    width:60%;
+    margin:auto;
+    justify-content:space-between;
+    gap:50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cadastrarSe{
+    margin-top:20px;
+}
+.area-confirmacao{
+    justify-content: center;
+}
+.confirmacao{
+    display:flex;
+    height:320px;
+
+}
+.card-confirmacao{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:25px;
+    gap:5px;
+}
+.linkConfirmacao{
+    flex-direction: row;
+    gap:25px;
+}
