@@ -48,9 +48,8 @@ function logar($c,$email,$senha){
     $sql_logado = mysqli_query($c,$sql_logar);
     $num = mysqli_num_rows($sql_logado);
     if($num>0){
-        while($linha = mysqli_fetch_array($sql_logado)){
-            $_SESSION['idCliente'] = $linha['id'];
-            }
+        $linha = mysqli_fetch_array($sql_logado)
+            $_SESSION['idCliente'] = $linha['id'];  
        header("location:escolha_produto.php");
     }
     else{

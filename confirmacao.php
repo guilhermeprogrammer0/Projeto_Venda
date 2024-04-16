@@ -26,8 +26,8 @@
     <?php 
     $sql = "SELECT nome  from cliente WHERE id = $_SESSION[idCliente]";
     $sql_cliente = mysqli_query($conexao,$sql);
-   while($linha = mysqli_fetch_array($sql_cliente))
-   {
+   $linha = mysqli_fetch_array($sql_cliente)
+   
     ?>
     <div class="card confirmacao" style="width: 25rem;">
   <div class="card-body card-confirmacao">
@@ -37,8 +37,7 @@
     <form action="confirmacao.php" method="POST"> 
         <input type="submit" class="btn btn-primary" value="Comprar" name="comprar">
     </form>
-  </div>
-  <?php } ?>   
+  </div> 
   <div class="mb-3 cadastrarSe linkConfirmacao "><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="escolha_produto.php">Voltar </a><a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="logout.php">Cancelar </a>
  
     </main>
