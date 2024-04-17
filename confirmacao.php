@@ -26,8 +26,7 @@
     <?php 
     $sql = "SELECT nome  from cliente WHERE id = $_SESSION[idCliente]";
     $sql_cliente = mysqli_query($conexao,$sql);
-   $linha = mysqli_fetch_array($sql_cliente)
-   
+    $linha = mysqli_fetch_array($sql_cliente);
     ?>
     <div class="card confirmacao" style="width: 25rem;">
   <div class="card-body card-confirmacao">
